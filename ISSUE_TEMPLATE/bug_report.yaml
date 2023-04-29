@@ -1,0 +1,47 @@
+name: バグ報告
+description: バグの報告
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待動作
+      description: 入力、行動に対しての期待していた動作を教えてください。
+      placeholder: ログイン状態でログアウトボタンを押したらログアウトする。
+    validations:
+      required: true
+  - type: textarea
+    id: what-actually-happened
+    attributes:
+      label: 実際の動作
+      description: 実際にどのような挙動をしましたか？
+      placeholder: ログイン状態でログアウトボタンを押したらログアウトしなかった。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 再現方法
+      description: どのようにこのバグを再現させることができますか？(ビデオなどあると尚良し)
+      placeholder: チャットページからログアウトをしたら起こりました。
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: 追加情報
+      description: 他に特筆すべき点などあれば教えてください。
+      placeholder: アカウント名はabc12345です。
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: 関連するログ
+      description: この部分は自動的にコードにレンダされるのでそのままログを入力してください。
+      render: shell

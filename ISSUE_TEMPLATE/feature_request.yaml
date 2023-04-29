@@ -1,0 +1,31 @@
+name: 追加機能
+description: 追加機能
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the feature request!
+  - type: textarea
+    id: request
+    attributes:
+      label: 概要
+      description: 短い説明をここに記入してください
+      placeholder: Tell us what you would like to see!
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 詳細
+      description: 入力値と出力値などの詳細をここに記入してください。
+    validations:
+      required: true
+  - type: textarea
+    id: others
+    attributes:
+      label: その他
+      description: 追加情報のリンク、参考資料などを記入してください。
+    validations:
+      required: false
